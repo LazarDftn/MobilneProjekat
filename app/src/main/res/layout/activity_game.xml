@@ -4,6 +4,81 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GameActivity">
+    tools:context=".GameActivity"
+    android:background="@drawable/pozadina">
 
+    <TextView
+        android:id="@+id/twStartGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zapocni igru"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.110000014" />
+
+    <Button
+        android:id="@+id/btnKzZ"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Ko zna zna"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/twStartGame" />
+
+    <Button
+        android:id="@+id/btnSpoj"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Spojnice"
+        app:layout_constraintEnd_toEndOf="@+id/btnKzZ"
+        app:layout_constraintStart_toStartOf="@+id/btnKzZ"
+        app:layout_constraintTop_toBottomOf="@+id/btnKzZ" />
+
+    <Button
+        android:id="@+id/btnAsoc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Asocijacije"
+        app:layout_constraintEnd_toEndOf="@+id/btnSpoj"
+        app:layout_constraintStart_toStartOf="@+id/btnSpoj"
+        app:layout_constraintTop_toBottomOf="@+id/btnSpoj" />
+
+    <Button
+        android:id="@+id/btnSkocko"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Skocko"
+        app:layout_constraintEnd_toEndOf="@+id/btnAsoc"
+        app:layout_constraintStart_toStartOf="@+id/btnAsoc"
+        app:layout_constraintTop_toBottomOf="@+id/btnAsoc" />
+
+    <Button
+        android:id="@+id/btnKpK"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Korak po korak"
+        app:layout_constraintEnd_toEndOf="@+id/btnSkocko"
+        app:layout_constraintStart_toStartOf="@+id/btnSkocko"
+        app:layout_constraintTop_toBottomOf="@+id/btnSkocko" />
+
+    <Button
+        android:id="@+id/btnBojBr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="@+id/btnKpK"
+        app:layout_constraintStart_toStartOf="@+id/btnKpK"
+        app:layout_constraintTop_toBottomOf="@+id/btnKpK" />
 </androidx.constraintlayout.widget.ConstraintLayout>
