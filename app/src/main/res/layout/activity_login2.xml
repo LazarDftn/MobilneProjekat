@@ -7,6 +7,29 @@
     tools:context=".LoginActivity"
     android:background="@drawable/pozadina">
 
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+
+            app:menu="@menu/bottom_nav" />
+    </RelativeLayout>
+
+
+
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -31,6 +54,7 @@
         android:ems="10"
         android:hint="Korisnicko ime"
         android:inputType="textPersonName"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -43,6 +67,7 @@
         android:ems="10"
         android:hint="Lozinka"
         android:inputType="textPersonName"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="@+id/inputUsername"
         app:layout_constraintStart_toStartOf="@+id/inputUsername"
         app:layout_constraintTop_toBottomOf="@+id/inputUsername" />
@@ -84,6 +109,7 @@
             android:textColor="@color/purple_500" />
 
     </LinearLayout>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
