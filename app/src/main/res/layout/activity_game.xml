@@ -73,11 +73,11 @@
         app:layout_constraintTop_toBottomOf="@+id/btnSkocko" />
 
     <Button
-        android:id="@+id/btnBojBr"
+        android:id="@+id/btnMojBr"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Button"
+        android:text="Moj broj"
         app:layout_constraintEnd_toEndOf="@+id/btnKpK"
         app:layout_constraintStart_toStartOf="@+id/btnKpK"
         app:layout_constraintTop_toBottomOf="@+id/btnKpK" />

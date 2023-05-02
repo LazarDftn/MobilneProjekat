@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/pozadina">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="32dp">
+
+        <TextView
+            android:id="@+id/spijiti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Spojite pojmove" />
+
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="5"
+        android:columnCount="2"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:useDefaultMargins="true"
+        android:layout_marginTop="32dp">
+
+        <Button
+            android:id="@+id/spojiA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spojite A"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <Button
+            android:id="@+id/spoji1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sa 1"
+            android:tag="0"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <Button
+            android:id="@+id/spojiB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spojite B"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <Button
+            android:id="@+id/spoji2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sa 2"
+            android:tag="1"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <Button
+            android:id="@+id/spojiC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spojite C"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <Button
+            android:id="@+id/spoji3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sa 3"
+            android:tag="2"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <Button
+            android:id="@+id/spojiD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spojite D"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <Button
+            android:id="@+id/spoji4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sa 4"
+            android:tag="3"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <Button
+            android:id="@+id/spojiE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spojite E"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <Button
+            android:id="@+id/spoji5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sa 5"
+            android:tag="4"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"/>
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/potvrda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Potvrdite" />
+
+</LinearLayout>

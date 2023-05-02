@@ -12,6 +12,15 @@
         android:theme="@style/Theme.Slagalica"
         tools:targetApi="31">
         <activity
+            android:name=".MojBrojActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KorakPoKorakAkctivity"
+            android:exported="false" />
+        <activity
+            android:name=".SpojniceActivity"
+            android:exported="false" />
+        <activity
             android:name=".GameActivity"
             android:exported="false" />
         <activity

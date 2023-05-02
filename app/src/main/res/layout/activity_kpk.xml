@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pozadina"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".KorakPoKorakActivity">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="187dp"
+        android:layout_marginTop="98dp"
+        android:layout_marginEnd="166dp"
+        android:layout_marginBottom="614dp"
+        android:text="Korak po korak"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <EditText
+        android:id="@+id/korak1"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="92dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:hint="prvi korak"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/korak2"
+        android:layout_width="296dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="drugi korak"
+        app:layout_constraintEnd_toEndOf="@+id/korak1"
+        app:layout_constraintStart_toStartOf="@+id/korak1"
+        app:layout_constraintTop_toBottomOf="@+id/korak1" />
+
+    <EditText
+        android:id="@+id/korak3"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:hint="treci korak"
+        app:layout_constraintEnd_toEndOf="@+id/korak2"
+        app:layout_constraintStart_toStartOf="@+id/korak2"
+        app:layout_constraintTop_toBottomOf="@+id/korak2" />
+
+    <EditText
+        android:id="@+id/korak4"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:hint="cetvrti korak"
+        app:layout_constraintEnd_toEndOf="@+id/korak3"
+        app:layout_constraintStart_toStartOf="@+id/korak3"
+        app:layout_constraintTop_toBottomOf="@+id/korak3" />
+
+    <EditText
+        android:id="@+id/korak5"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:hint="peti korak"
+        app:layout_constraintEnd_toEndOf="@+id/korak4"
+        app:layout_constraintStart_toStartOf="@+id/korak4"
+        app:layout_constraintTop_toBottomOf="@+id/korak4" />
+
+    <EditText
+        android:id="@+id/korak6"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:hint="sesti korak"
+        app:layout_constraintEnd_toEndOf="@+id/korak5"
+        app:layout_constraintStart_toStartOf="@+id/korak5"
+        app:layout_constraintTop_toBottomOf="@+id/korak5" />
+
+    <EditText
+        android:id="@+id/korak7"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:hint="sedmi korak"
+        app:layout_constraintEnd_toEndOf="@+id/korak6"
+        app:layout_constraintStart_toStartOf="@+id/korak6"
+        app:layout_constraintTop_toBottomOf="@+id/korak6" />
+
+    <EditText
+        android:id="@+id/upisiPojam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="104dp"
+        android:ems="10"
+        android:hint="Upisi pojam"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/korak7" />
+</androidx.constraintlayout.widget.ConstraintLayout>
