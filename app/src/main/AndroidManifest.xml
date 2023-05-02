@@ -15,7 +15,7 @@
             android:name=".MojBrojActivity"
             android:exported="false" />
         <activity
-            android:name=".KorakPoKorakAkctivity"
+            android:name=".KorakPoKorakActivity"
             android:exported="false" />
         <activity
             android:name=".SpojniceActivity"

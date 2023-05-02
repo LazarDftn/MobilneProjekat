@@ -24,6 +24,7 @@ public class GameActivity extends AppCompatActivity {
                 startActivity(new Intent(GameActivity.this,SpojniceActivity.class));
             }
         });
+
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -33,7 +34,7 @@ public class GameActivity extends AppCompatActivity {
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(GameActivity.this,KorakPoKorakActivity.class));
+                startActivity((new Intent(GameActivity.this,KorakPoKorakActivity.class)));
             }
         });
     }
