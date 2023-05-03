@@ -17,14 +17,9 @@ public class SpojniceActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_spojnice);
-        backButton = findViewById(R.id.backspojnica);
+     //   backButton = findViewById(R.id.backspojnica);
 
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(SpojniceActivity.this, GameActivity.class));
-            }
-        });
+
     }
 
 }
