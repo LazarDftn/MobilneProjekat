@@ -16,6 +16,7 @@ import com.google.android.material.navigation.NavigationBarView;
 
 public class LoginActivity extends AppCompatActivity {
     private Button loginButton;
+    private Button igreButton;
     BottomNavigationView bottomNavigationView;
     HomeFragment homeFragment = new HomeFragment();
     ProfileFragment profileFragment = new ProfileFragment();
@@ -28,15 +29,23 @@ public class LoginActivity extends AppCompatActivity {
         TextView btn=findViewById(R.id.textViewSignUp);
         bottomNavigationView = findViewById(R.id.bottom_navigation);
         loginButton = findViewById(R.id.btnLogin);
+        igreButton = findViewById(R.id.igre);
         bottomNavigationView = findViewById(R.id.bottom_navigation);
         FrameLayout fragmentContainer = findViewById(R.id.container);
 
-        bottomNavigationView.setVisibility(View.GONE);
+        bottomNavigationView.setVisibility(View.VISIBLE);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 bottomNavigationView.setVisibility(View.VISIBLE);
+            }
+        });
+
+        igreButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(LoginActivity.this,GameActivity.class));
             }
         });
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {

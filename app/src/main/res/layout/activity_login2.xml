@@ -7,14 +7,16 @@
     tools:context=".LoginActivity"
     android:background="@drawable/pozadina">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <FrameLayout
             android:id="@+id/container"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent">
+
+        </FrameLayout>
 
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -82,6 +84,7 @@
         app:layout_constraintStart_toStartOf="@+id/inputPassword"
         app:layout_constraintTop_toBottomOf="@+id/inputPassword"
         />
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
@@ -108,8 +111,13 @@
             android:text="Prijavi se"
             android:textColor="@color/purple_500" />
 
-    </LinearLayout>
+        <Button
+            android:id="@+id/igre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IGRE" />
 
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -185,6 +185,16 @@
         android:layout_height="wrap_content"
         android:text="Potvrdite" />
 
+    <Button
+        android:id="@+id/backspojnica"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="574dp"
+        tools:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nazad"
+        android:visibility="visible" />
+
 </LinearLayout>
 
 

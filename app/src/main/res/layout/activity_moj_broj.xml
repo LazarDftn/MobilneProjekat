@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MojBrojActivity"
-    android:background="@drawable/pozadina">
+    android:background="@drawable/pozadina"
+    tools:context=".MojBrojActivity">
 
     <ImageView
         android:id="@+id/igracJedan"
@@ -24,7 +23,7 @@
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/igracJedan"
-        app:layout_constraintTop_toTopOf="@+id/igracJedan"/>
+        app:layout_constraintTop_toTopOf="@+id/igracJedan" />
 
 
     <ImageView
@@ -43,7 +42,7 @@
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/igracDva"
-        app:layout_constraintTop_toTopOf="@+id/igracDva"/>
+        app:layout_constraintTop_toTopOf="@+id/igracDva" />
 
     <Button
         android:id="@+id/btnStop"
@@ -78,9 +77,9 @@
         android:layout_height="48dp"
         android:layout_marginStart="36dp"
         android:layout_marginTop="127dp"
-        android:text=""
         android:ems="10"
         android:inputType="number"
+        android:text=""
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/random" />
 
@@ -90,9 +89,9 @@
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="127dp"
-        android:text=""
         android:ems="10"
         android:inputType="textPersonName"
+        android:text=""
         app:layout_constraintStart_toEndOf="@+id/br1"
         app:layout_constraintTop_toBottomOf="@+id/random" />
 
@@ -102,9 +101,9 @@
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="127dp"
-        android:text=""
         android:ems="10"
         android:inputType="textPersonName"
+        android:text=""
         app:layout_constraintStart_toEndOf="@+id/br2"
         app:layout_constraintTop_toBottomOf="@+id/random" />
 
@@ -114,9 +113,9 @@
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="127dp"
-        android:text=""
         android:ems="10"
         android:inputType="textPersonName"
+        android:text=""
         app:layout_constraintStart_toEndOf="@+id/br3"
         app:layout_constraintTop_toBottomOf="@+id/random" />
 
@@ -126,9 +125,9 @@
         android:layout_height="48dp"
         android:layout_marginStart="61dp"
         android:layout_marginTop="36dp"
-        android:text=""
         android:ems="10"
         android:inputType="textPersonName"
+        android:text=""
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/br4" />
 
@@ -138,9 +137,9 @@
         android:layout_height="48dp"
         android:layout_marginStart="25dp"
         android:layout_marginTop="36dp"
-        android:text=""
         android:ems="10"
         android:inputType="textPersonName"
+        android:text=""
         app:layout_constraintStart_toEndOf="@+id/br5"
         app:layout_constraintTop_toBottomOf="@+id/br3" />
 
@@ -218,6 +217,16 @@
         app:layout_constraintBottom_toTopOf="@+id/btnStop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/backnbr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nazad"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="681dp"
+        tools:visibility="visible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
